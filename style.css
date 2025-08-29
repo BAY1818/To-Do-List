@@ -1,0 +1,128 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: #a259ff;
+}
+
+/* Card */
+.todo-container {
+  background: #fff;
+  padding: 24px;
+  border-radius: 20px;
+  width: min(90vw, 420px);
+  margin: 40px auto 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+h1 {
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+/* Input row */
+.input-section {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.input-section button,
+.input-section select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #f6f6f6;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+/* Hover for add button */
+.input-section button:hover {
+  background: #4caf50;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Hover for filter dropdown */
+.input-section select:hover {
+  background: #eee;
+}
+
+/* List */
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #f7f7f7;
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.task-text {
+  flex: 1;
+}
+
+/* Completed visual */
+#taskList li.completed .task-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Buttons inside tasks */
+.check-btn,
+.delete-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.15s ease, filter 0.2s ease;
+}
+
+/* Hover effects */
+.check-btn:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+  filter: brightness(0.8) sepia(1) hue-rotate(-20deg);
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+}
+
+footer p {
+  color: lightblue;
+  font-size: 14px;
+}
