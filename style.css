@@ -14,8 +14,8 @@ body {
 /* Card */
 .todo-container {
   background: #fff;
-  padding: 24px;
-  border-radius: 20px;
+  padding: 70px;
+  border-radius: 30px;
   width: min(90vw, 420px);
   margin: 40px auto 0;
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
